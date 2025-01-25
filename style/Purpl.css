@@ -16,7 +16,9 @@
 window#waybar {
 	background: #100214;
 	color: #cba6f7;
-}
+
+    min-height: 18px;  
+    font-size: 18px;   }
 
 window#waybar.hidden {
 	opacity: 0.5;
@@ -27,6 +29,9 @@ window#waybar.empty #window {
 	padding: 0px;
 	border: 0px;
 	background-color: transparent;
+
+    min-height: 18px; 
+    font-size: 18px;  
 }
 
 tooltip {
@@ -46,7 +51,7 @@ tooltip {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 4px;
-	padding-left: 4px;
+	padding-left: 8px;
 }
 
 .modules-center {
@@ -63,7 +68,7 @@ tooltip {
 	background-color: #441a53;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-right: 4px;
+	padding-right: 30px;
 	padding-left: 4px;
 }
 
@@ -79,9 +84,18 @@ tooltip {
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#workspaces button:hover {
+	color: #9CCFD8;
+    border-radius: 10px;
+ 	padding-left: 4px;
+    padding-right: 4px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
 #workspaces button.active {
 	color: #cba6f7;
-	border-radius: 50%;
+	border-radius: 10px;
 	background-color: black;
     padding-left: 8px;
     padding-right: 8px;
@@ -96,15 +110,6 @@ tooltip {
 #workspaces button.urgent {
 	color: #11111b;
 	border-radius: 10px;
-}
-
-#workspaces button:hover {
-	color: #9CCFD8;
-    border-radius: 15px;
- 	padding-left: 2px;
-    padding-right: 2px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #backlight,
@@ -169,17 +174,22 @@ tooltip {
 	}
 }
 
+#taskbar button {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 #taskbar button.active {
 	background-color: purple;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #taskbar button:hover {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }

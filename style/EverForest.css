@@ -48,6 +48,9 @@ window#waybar {
   color: @fg;
   transition-property: background-color;
   transition-duration: 0.5s;
+
+  min-height: 16px;
+  font-size: 16px;
 }
 
 window#waybar.hidden {
@@ -64,6 +67,10 @@ window#waybar.hidden {
 window#waybar.empty,
 window#waybar.empty #window {
   background: none;
+
+  min-height: 16px;
+  font-size: 16px;
+
 }
 
 .modules-left button:first-child {
